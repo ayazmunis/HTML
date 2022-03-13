@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 30px;
+            padding: 8px;
+            background-color: burlywood;
+            border-radius: 8px;
+        }
+        input[type=text] {
+            height: 5px;
+            padding: 12px 15px;
+            margin: 4px 0;
+            border: 3px solid rgb(207, 121, 39);
+            border-radius: 8px;
+            background-color: #f8f664;
+            color: white;
+        }
+        textarea{
+            background-color: #f8f664;
+            border: 3px solid rgb(207, 121, 39);
+            border-radius: 8px;
+        }
+        select{
+            width: 20% ;
+            background-color: #f8f664;
+            border: 3px solid rgb(207, 121, 39);
+            border-radius: 8px;
+        }
+        input[type=submit]{
+            background-color: #f8f664;
+            border: 3px solid rgb(207, 121, 39);
+            border-radius: 8px;
+            width: 30%;
+            font-size: 17px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <h1>Employee Interests Survey Form</h1>
+        <p>
+            Enter your name: <input type="text" name="name">
+        </p>
+
+        <p>
+            Enter you department: <input type="text" name="department">
+        </p>
+
+        <p>
+            Tell us a little about yourself: <textarea name="about" id="about" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            Do you Exercise at home? Yes <input type="radio" name="exercise" id=""> No<input type="radio" name="exercise" id="">
+        </p>
+
+        <p>How do you like to read about your favourite topics?<br> 
+            <input type="checkbox" name="data" id="">Books <input type="checkbox" name="data" id="">Articles <input type="checkbox" name="data" id="">Phone Apps <input type="checkbox" name="data" id="">Magzines
+        </p>
+
+        <p>What genre of movies do you like?
+            <select name="genre" id="genre">
+                <option value="ini">Choose</option>
+                <option value="horror">Horror</option>
+                <option value="Sci Fi">Sci Fi</option>
+                <option value="Fanstasy">Fantasy</option>
+                <option value="Animated">Animated</option>
+            </select>
+        </p>
+        <input type="submit" value="Sumbit">
+
+        </form>
+    </div>
+        
+</body>
+</html>
